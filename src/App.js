@@ -20,7 +20,7 @@ class App extends Component {
         <TopPushMenu/>
         <SideBarMenuPush/>
         <div class="pusher" >
-          <Segment inverted vertical style={{textAlign: 'center', height: 400}} >
+          <Segment inverted vertical style={{textAlign: 'center'}} >
             <Container>
               <PointingMenu/>
             </Container>
@@ -48,7 +48,7 @@ class App extends Component {
                 </Grid.Column>
 
                 <Grid.Column floated='right' width={6}>
-                  <Image src={image1} size='large' bordered style={{width :200 ,aspectratio:0.5}}/>
+                  <Image src={image1} size='large' bordered/>
                 </Grid.Column>
             </Grid>
 
@@ -59,7 +59,7 @@ class App extends Component {
             </div>
           </Segment>
 
-          <Segment vertical quote>
+          <Segment vertical quote style={{textAlign: 'center'}}>
             <Grid stackable columns={2} divided>
               <Grid.Column centered>
                 <div class='column' style={{paddingTop: '5em', paddingBottom: '5em'}}>
