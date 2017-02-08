@@ -10,129 +10,162 @@ import SideBarMenuPush from './SideBarMenuPush'
 import image1 from './assets/images/wireframe/white-image.png'
 import image2 from './assets/images/avatar/nan.jpg'
 
-
 class App extends Component {
   render() {
-
     return (
-      <div className="App">
 
+      <div className="App">
+        {/*<div className="ui large top fixed hidden menu">
+          <div className="ui container">
+            <a className="active item">Home</a>
+            <a className="item">Work</a>
+            <a className="item">Company</a>
+            <a className="item">Careers</a>
+            <div className="right menu">
+              <div className="item">
+                <a className="ui button">Log in</a>
+              </div>
+              <div className="item">
+                <a className="ui primary button">Sign Up</a>
+              </div>
+            </div>
+          </div>
+        </div>*/}
+
+        <div className="ui vertical inverted sidebar menu">
+          <a className="active item">Home</a>
+          <a className="item">Work</a>
+          <a className="item">Company</a>
+          <a className="item">Careers</a>
+          <a className="item">Login</a>
+          <a className="item">Signup</a>
+        </div>
+
+{/*
         <TopPushMenu/>
         <SideBarMenuPush/>
-        <div class="pusher" >
-          <Segment inverted vertical style={{textAlign: 'center'}} >
+*/}
+
+        <div className="pusher">
+          <Segment className="ui inverted vertical masthead center aligned">
+
             <Container>
+{/*
+              <div className="ui large secondary inverted pointing menu">
+                <a className="toc item">
+                  <i className="sidebar icon"></i>
+                </a>
+                <a className="active item">Home</a>
+                <a className="item">Work</a>
+                <a className="item">Company</a>
+                <a className="item">Careers</a>
+                <div className="right item">
+                  <a className="ui inverted button">Log in</a>
+                  <a className="ui inverted button">Sign Up</a>
+                </div>
+              </div>
+*/}
               <PointingMenu/>
             </Container>
+
             <Container text>
-              <Header as='h1' inverted>
+              <Header as="h1" inverted>
                 Imagine-a-Company
               </Header>
-
-              <Header as='h2' inverted>
-                Do whatever you want when you want to.
-              </Header>
-              <Button content='Get Started' icon='right arrow' labelPosition='right' color='blue' size='large'/>
+              <Header as="h2" inverted>Do whatever you want when you want to.</Header>
+              <Button content='Get Started' icon='right arrow' labelPosition='right' color='blue' size='huge'/>
             </Container>
           </Segment>
 
-          <Segment vertical style={{textAlign: 'center', flex:1}}>
-            <Grid stackable verticalAlign='middle' container>
-                <Grid.Column width={8}>
-                  <div style={{textAlign: 'left'}}>
-                    <Header as='h3'>We Help Companies and Companions</Header>
-                    <p>We can give your company superpowers to do things that they never thought possible. Let us delight your customers and empower your needs...through pure data analytics.</p>
-                    <Header as='h3'>We Make Bananas That Can Dance</Header>
-                    <p>Yes that's right, you thought it was the stuff of dreams, but even bananas can be bioengineered.</p>
-                  </div>
-                </Grid.Column>
+          <Segment vertical className="stripe">
+            <Container className="stackable">
+              <div className="row">
+                <div className="help_company">
+                  <Header as="h3">We Help Companies and Companions</Header>
+                  <p>We can give your company superpowers to do things that they never thought possible. Let us delight your customers and empower your needs...through pure data analytics.</p>
+                  <Header as="h3">We Make Bananas That Can Dance</Header>
+                  <p>Yes that's right, you thought it was the stuff of dreams, but even bananas can be bioengineered.</p>
+                </div>
+                <div className="company_imageView">
+                  <Image src={image1} size="large" bordered className="company_image"/>
+                </div>
+              </div>
+              <div className="row">
+                <div className="checkButton">
+                  <Button size="huge">Check Them Out</Button>
+                </div>
+              </div>
+            </Container>
+          </Segment>
 
-                <Grid.Column floated='right' width={6}>
-                  <Image src={image1} size='large' bordered/>
-                </Grid.Column>
-            </Grid>
 
-            <div class="row">
-              <div class="center aligned column">
-                <Button content='Check Them Out' size='large'/>
+          <Segment className="ui vertical stripe quote">
+            <div className="ui equal width stackable internally celled grid">
+              <div className="center aligned row">
+                <div className="column">
+                  <Header as="h3">"What a Company"</Header>
+                  <p>That is what they all say about us</p>
+                </div>
+                <div className="column">
+                  <Header as="h3">"I shouldn't have gone with their competitor."</Header>
+                  <p>
+                    <Image src={image2} shape="circular" size="mini" verticalAlign="middle"/> <span>Nan</span> Chief Fun Officer Acme Toys
+                  </p>
+                </div>
               </div>
             </div>
           </Segment>
 
-          <Segment vertical quote style={{textAlign: 'center'}}>
-            <Grid stackable columns={2} divided>
-              <Grid.Column centered>
-                <div class='column' style={{paddingTop: '5em', paddingBottom: '5em'}}>
-                  <Header as='h3'>"What a Company"</Header>
-                  <p>That is what they all say about us</p>
-                </div>
-              </Grid.Column>
-
-              <Grid.Column>
-                <div class="column" style={{paddingTop: '5em', paddingBottom: '5em'}}>
-                  <Header as="h3">
-                    "I shouldn't have gone with their competitor."
-                  </Header>
-                  <p>
-                    <Image src={image2} size='mini' verticalAlign='middle' shape='circular'/><span> Nan</span> Chief Fun Officer Acme Toys
-                  </p>
-                </div>
-              </Grid.Column>
-            </Grid>
-          </Segment>
-
-          <Segment vertical>
-            <Container text textAlign='left'>
+          <Segment className="ui vertical stripe">
+            <Container text>
               <Header as="h3">Breaking The Grid, Grabs Your Attention</Header>
               <p>Instead of focusing on content creation and hard work, we have learned how to master the art of doing nothing by providing massive amounts of whitespace and generic content that can seem massive, monolithic and worth your attention.</p>
-              <Button content='Read More' size='large'/>
-              <Divider horizontal>
-                <Header as="h4">
-                  <a href="#">Case Studies</a>
-                </Header>
-              </Divider>
-              <Header as='h3'> Did We Tell You About Our Bananas? </Header>
+              <Button size="large">Read More</Button>
+              <Header as="h4" className="ui horizontal header divider">
+                <a href="#">Case Studies</a>
+              </Header>
+              <Header as="h3" className="ui header">Did We Tell You About Our Bananas?</Header>
               <p>Yes I know you probably disregarded the earlier boasts as non-sequitur filler content, but its really true. It took years of gene splicing and combinatory DNA research, but our bananas can really dance.</p>
-              <Button content="I'am Still Quite Interested" size='large'/>
+              <Button size="large">I'm Still Quite Interested</Button>
             </Container>
           </Segment>
 
-          <Segment inverted vertical>
-            <Container style={{textAlign: 'left'}}>
-              <Grid>
-                <Grid stackable columns={3}>
-                  <Grid.Column width={3}>
-                    <Header inverted as='h4'>About</Header>
-                    <List inverted link>
-                      <List.Item as='a'>Sitemap</List.Item>
-                      <List.Item as='a'>Contact US</List.Item>
-                      <List.Item as='a'>Religious Ceremonies</List.Item>
-                      <List.Item as='a'>Gazebo Plans</List.Item>
-                    </List>
-                  </Grid.Column>
 
-                  <Grid.Column width={3}>
-                    <Header inverted as='h4'> Services </Header>
-                    <List inverted link>
-                      <List.Item as='a'>Banana Pre-Order</List.Item>
-                      <List.Item as='a'>DNA FAQ</List.Item>
-                      <List.Item as='a'>How To Access</List.Item>
-                      <List.Item as='a'>Favorite X-Men</List.Item>
-                    </List>
-                  </Grid.Column>
-
-                  <Grid.Column width={8}>
-                    <Header inverted as='h4'> Footer Header </Header>
-                    <p>Extra space for a call to action inside the footer that could help re-engage users.</p>
-                  </Grid.Column>
-                </Grid>
-              </Grid>
-            </Container>
+          <Segment className="ui inverted vertical footer segment">
+            <div className="ui container">
+              <div className="ui stackable inverted divided equal height stackable grid">
+                <div className="three wide column">
+                  <Header as="h4" className="ui inverted header">About</Header>
+                  <div className="ui inverted link list">
+                    <a href="#" className="item">Sitemap</a>
+                    <a href="#" className="item">Contact Us</a>
+                    <a href="#" className="item">Religious Ceremonies</a>
+                    <a href="#" className="item">Gazebo Plans</a>
+                  </div>
+                </div>
+                <div className="three wide column">
+                  <Header as="h4" className="ui inverted header">Services</Header>
+                  <div className="ui inverted link list">
+                    <a href="#" className="item">Banana Pre-Order</a>
+                    <a href="#" className="item">DNA FAQ</a>
+                    <a href="#" className="item">How To Access</a>
+                    <a href="#" className="item">Favorite X-Men</a>
+                  </div>
+                </div>
+                <div className="seven wide column">
+                  <Header as="h4" className="ui inverted header">Footer Header</Header>
+                  <p>Extra space for a call to action inside the footer that could help re-engage users.</p>
+                </div>
+              </div>
+            </div>
           </Segment>
         </div>
       </div>
+
+
     );
   }
 }
+
 
 export default App;

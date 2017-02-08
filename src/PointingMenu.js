@@ -13,9 +13,11 @@ export default class PointingMenu extends Component {
       <Segment inverted>
         <Menu inverted pointing secondary>
           <Container>
-            <div>
-              <Icon disabled name='sidebar'/>
-            </div>
+            {/*
+              <div>
+                <Icon disabled name='sidebar'/>
+              </div>
+            */}
             <Menu.Item name='home' active={activeItem === 'home'} onClick={this.handleItemClick} />
             <Menu.Item name='work' active={activeItem === 'work'} onClick={this.handleItemClick} />
             <Menu.Item name='company' active={activeItem === 'company'} onClick={this.handleItemClick} />
