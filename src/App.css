@@ -90,6 +90,7 @@
   display: flex;
   flex-direction: row;
   padding: 1em 0em 1em 0;
+  flex-wrap: wrap;
 }
 
 .stripe .stackable .row .help_company {
@@ -98,11 +99,12 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  min-width: 500px;
 }
 
 .stripe .stackable .row .company_imageView {
-  width: 37.5% !important;
-  margin-left: auto;
+  /*width: 37.5% !important;
+  margin-left: auto;*/
   padding: 0em 1em 0em 1em;
   justify-content: center;
   flex-direction: column;
@@ -110,7 +112,7 @@
 }
 
 .stripe .stackable .row .company_image {
-  float: right;
+  /*float: right;*/
 }
 
 .stripe .stackable .row .checkButton {
