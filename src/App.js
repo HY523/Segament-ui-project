@@ -124,18 +124,18 @@ class App extends Component {
               <Header as="h4" className="ui horizontal header divider">
                 <a href="#">Case Studies</a>
               </Header>
-              <Header as="h3" className="ui header">Did We Tell You About Our Bananas?</Header>
+              <Header as="h3">Did We Tell You About Our Bananas?</Header>
               <p>Yes I know you probably disregarded the earlier boasts as non-sequitur filler content, but its really true. It took years of gene splicing and combinatory DNA research, but our bananas can really dance.</p>
               <Button size="large">I'm Still Quite Interested</Button>
             </Container>
           </Segment>
 
 
-          <Segment className="ui inverted vertical footer segment">
-            <div className="ui container">
+          <Segment inverted vertical>
+            <Container>
               <div className="ui stackable inverted divided equal height stackable grid">
                 <div className="three wide column">
-                  <Header as="h4" className="ui inverted header">About</Header>
+                  <Header as="h4" inverted>About</Header>
                   <div className="ui inverted link list">
                     <a href="#" className="item">Sitemap</a>
                     <a href="#" className="item">Contact Us</a>
@@ -144,7 +144,7 @@ class App extends Component {
                   </div>
                 </div>
                 <div className="three wide column">
-                  <Header as="h4" className="ui inverted header">Services</Header>
+                  <Header as="h4" inverted>Services</Header>
                   <div className="ui inverted link list">
                     <a href="#" className="item">Banana Pre-Order</a>
                     <a href="#" className="item">DNA FAQ</a>
@@ -153,16 +153,14 @@ class App extends Component {
                   </div>
                 </div>
                 <div className="seven wide column">
-                  <Header as="h4" className="ui inverted header">Footer Header</Header>
+                  <Header as="h4" inverted>Footer Header</Header>
                   <p>Extra space for a call to action inside the footer that could help re-engage users.</p>
                 </div>
               </div>
-            </div>
+            </Container>
           </Segment>
         </div>
       </div>
-
-
     );
   }
 }
