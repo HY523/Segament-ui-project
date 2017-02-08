@@ -141,4 +141,58 @@
     font-size: 1.5em;
   }*/
 
-  
+  @media (min-width: 767px){
+    .stripe .stackable .row .company_imageView {
+      width: 37.5% !important;
+      margin-left: auto;
+      padding: 0em 1em 0em 1em;
+      justify-content: center;
+      flex-direction: column;
+      display: flex;
+    }
+    .stripe .stackable .row .company_image {
+      float: right;
+    }
+
+    .stripe .stackable .row .help_company {
+      width: 50% !important;
+      padding: 0em 1em 0em 1em;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+    }
+  }
+  @media (min-width: 500px) and (max-width: 767px){
+    .stripe .stackable .row .company_imageView {
+      width: 100% !important;
+      margin-left: auto;
+      padding: 0em 1em 0em 1em;
+      justify-content: center;
+      flex-direction: column;
+      display: flex;
+    }
+    .stripe .stackable .row .company_image {
+      float: right;
+    }
+
+    .stripe .stackable .row .help_company {
+      width: 100% !important;
+      padding: 0em 1em 0em 1em;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+    }
+  }
+
+  @media (max-width: 500px){
+
+    .stripe .stackable .row .help_company {
+      width: 100% !important;
+      padding: 0em 1em 0em 1em;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
