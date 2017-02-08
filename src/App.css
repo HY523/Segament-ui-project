@@ -95,6 +95,9 @@
 .stripe .stackable .row .help_company {
   width: 50% !important;
   padding: 0em 1em 0em 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .stripe .stackable .row .company_imageView {
