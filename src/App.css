@@ -90,15 +90,11 @@
   display: flex;
   flex-direction: row;
   padding: 1em 0em 1em 0;
-  flex-wrap: wrap;
 }
 
 .stripe .stackable .row .help_company {
   width: 50% !important;
   padding: 0em 1em 0em 1em;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 
 .stripe .stackable .row .company_imageView {
@@ -108,7 +104,6 @@
   justify-content: center;
   flex-direction: column;
   display: flex;
-  flex:1;
 }
 
 .stripe .stackable .row .company_image {
