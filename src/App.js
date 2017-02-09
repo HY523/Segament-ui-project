@@ -4,9 +4,9 @@ import 'semantic-ui-css/semantic.min.css';
 import computeLayout from 'css-layout/dist/css-layout.min';
 
 import {Container, Header, Menu, Button, Image, Icon, Segment, Grid, List, Divider} from 'semantic-ui-react'
-import TopPushMenu from './TopPushMenu'
-import PointingMenu from './PointingMenu'
-import SideBarMenuPush from './SideBarMenuPush'
+import TopPushMenu from './components/TopPushMenu'
+import PointingMenu from './components/PointingMenu'
+import SideBarMenuPush from './components/SideBarMenuPush'
 import image1 from './assets/images/wireframe/white-image.png'
 import image2 from './assets/images/avatar/nan.jpg'
 
@@ -164,6 +164,5 @@ class App extends Component {
     );
   }
 }
-
 
 export default App;
