@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import '../App.css'
-import { Menu, Segment, Button, Container, Icon, Header} from 'semantic-ui-react'
+import { Menu, Segment, Button, Container, Icon} from 'semantic-ui-react'
 
 export default class PointingMenu extends Component {
   state = { activeItem: 'home' }
@@ -15,6 +15,11 @@ export default class PointingMenu extends Component {
         <Menu inverted pointing secondary>
           <Container>
 
+              {/*
+                <div className="toc item">
+                  <Icon disabled name='sidebar' link/>
+                </div>
+              */}
               <div className="toc item">
                 <Icon disabled name='sidebar' link/>
               </div>

@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import '../App.css'
 import { Sidebar, Segment, Button, Menu, Image, Icon, Header } from 'semantic-ui-react'
 
 class SidebarPushMenu extends Component {
@@ -9,6 +10,9 @@ class SidebarPushMenu extends Component {
     const { activeItem, visible } = this.state
     return (
       <div>
+        <div className="toc item">
+          <Button onClick={this.toggleVisibility}>SideBar</Button>
+        </div>
         <Sidebar.Pushable as={Segment}>
           <Sidebar as={Menu} animation='push' width='thin' visible={visible} icon='labeled' vertical inverted>
             <Menu inverted vertical>
@@ -21,7 +25,7 @@ class SidebarPushMenu extends Component {
           <Sidebar.Pusher>
             <Segment basic>
               <Header as='h3'>Application Content</Header>
-              <Image src='http://semantic-ui.com/images/wireframe/paragraph.png' />
+              <Image src='http://semantic-ui.com/images/wireframe/paragraph.png'/>
             </Segment>
           </Sidebar.Pusher>
         </Sidebar.Pushable>
