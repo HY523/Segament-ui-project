@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 import { Sidebar, Segment, Button, Menu, Image, Header, Container } from 'semantic-ui-react'
-
+import ContentPush from './ContentPush'
 class TopPushMenu extends Component {
   state = { visible: false }
 
-  toggleVisibility = () => this.setState({ visible: !this.state.visible })
+  toggleTopMenuVisibility = () => this.setState({ visible: !this.state.visible })
   handleItemClick = (e, { name }) => this.setState({ activeItem: name })
 
   render() {
@@ -12,9 +12,9 @@ class TopPushMenu extends Component {
     const { activeItem } = this.state
     return (
       <div>
+        <Button onClick={this.toggleTopMenuVisibility}>Toggle Visibility</Button>
         <Sidebar.Pushable as={Segment}>
-          <Sidebar as={Menu} animation='push' direction='top' visible={visible} inverted>
-            <Menu>
+          <Sidebar as={Menu} animation='overlay' direction='top' visible={visible}>
               <Container>
                 <Menu.Item
                   name='home'
@@ -39,6 +39,7 @@ class TopPushMenu extends Component {
                 >
                   Company
                 </Menu.Item>
+
                 <Menu.Item
                   name='careers'
                   active={activeItem === 'careers'}
@@ -57,8 +58,10 @@ class TopPushMenu extends Component {
                   <Button primary>Sign up</Button>
                 </Menu.Item>
               </Container>
-            </Menu>
           </Sidebar>
+          <Sidebar.Pusher>
+            <ContentPush/>
+          </Sidebar.Pusher>
         </Sidebar.Pushable>
       </div>
     )
