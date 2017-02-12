@@ -7,6 +7,7 @@ import {Container, Header, Button, Image, Segment} from 'semantic-ui-react'
 import TopPushMenu from './components/TopPushMenu'
 import SideBarMenuPush from './components/SideBarMenuPush'
 import ContentPush from './components/ContentPush'
+import TopHiddenMenu from './components/TopHiddenMenu'
 
 
 class App extends Component {
@@ -45,8 +46,8 @@ class App extends Component {
         <TopPushMenu/>
 
 */}
+        <TopHiddenMenu/>
         <SideBarMenuPush/>
-        <ContentPush/>
       </div>
     );
   }
