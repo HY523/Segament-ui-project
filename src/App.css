@@ -1,25 +1,5 @@
-/*.App {
-  text-align: left;
-}
-
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
-}
-
-.App-intro {
-  font-size: large;
-}*/
-
-/*@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}*/
-
-.hidden.menu {
-  display: none;
+.topHiddenMenu {
+  display: hidden;
 }
 
 .masthead.segment {
@@ -77,9 +57,6 @@
   padding: 5em 0em;
 }
 
-.secondary.pointing.menu .toc.item {
-  display: none;
-}
 
  /*Css impleted with yoga */
 
@@ -119,13 +96,20 @@
   width: 100% !important;
 }
 
+/*Pointing Menu*/
+
 .pointing_sign_menu {
   margin-left: auto !important;
+  display: flex;
 }
 
-  .pointing_menu {
-    display: flex;
-  }
+.pointing_menu {
+  display: flex;
+}
+
+.toc_item {
+  display: none;
+}
 
   @media (min-width: 767px){
 
@@ -162,9 +146,6 @@
     .pointing_menu {
       display: none;
     }
-    .secondary.pointing.menu .toc.item {
-      display: block;
-    }
     .masthead.segment {
       min-height: 350px;
     }
@@ -177,10 +158,7 @@
       font-size: 1.7em;
       font-weight: normal;
     }
-  }
-
-  @media (min-width: 700px){
-    .item {
-
+    .toc_item {
+      display: block;
     }
   }
