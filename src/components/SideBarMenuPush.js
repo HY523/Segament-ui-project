@@ -1,37 +1,31 @@
 import React, { Component } from 'react'
 import '../App.css'
 import { Sidebar, Segment, Button, Menu, Image, Icon, Header } from 'semantic-ui-react'
+import ContentPush from './ContentPush'
 
-class SidebarPushMenu extends Component {
+export default class SidebarPushMenu extends Component {
   state = { visible: false }
-  toggleVisibility = () => this.setState({ visible: !this.state.visible })
   handleItemClick = (e, { name }) => this.setState({ activeItem: name })
   render() {
     const { activeItem, visible } = this.state
+      //console.log('KKKK', toggleSideBarVisibility)
     return (
+
       <div>
-        <div className="toc item">
-          <Button onClick={this.toggleVisibility}>SideBar</Button>
-        </div>
         <Sidebar.Pushable as={Segment}>
-          <Sidebar as={Menu} animation='push' width='thin' visible={visible} icon='labeled' vertical inverted>
-            <Menu inverted vertical>
-              <Menu.Item name='home' active={activeItem === 'home'} onClick={this.handleItemClick} />
-              <Menu.Item name='work' active={activeItem === 'messages'} onClick={this.handleItemClick} />
-              <Menu.Item name='company' active={activeItem === 'company'} onClick={this.handleItemClick} />
-              <Menu.Item name='careers' active={activeItem === 'careers'} onClick={this.handleItemClick} />
-            </Menu>
+          <Sidebar as={Menu} animation='uncover' width='thin' visible={visible} vertical inverted>
+            <Menu.Item name='home' active={activeItem === 'home'} onClick={this.handleItemClick}/>
+            <Menu.Item name='work' active={activeItem === 'work'} onClick={this.handleItemClick}/>
+            <Menu.Item name='company' active={activeItem === 'company'} onClick={this.handleItemClick}/>
+            <Menu.Item name='carreers' active={activeItem === 'careers'} onClick={this.handleItemClick}/>
+            <Menu.Item name='login' active={activeItem === 'login'} onClick={this.handleItemClick}/>
+            <Menu.Item name='signup' active={activeItem === 'signup'} onClick={this.handleItemClick}/>
           </Sidebar>
           <Sidebar.Pusher>
-            <Segment basic>
-              <Header as='h3'>Application Content</Header>
-              <Image src='http://semantic-ui.com/images/wireframe/paragraph.png'/>
-            </Segment>
+            <ContentPush/>
           </Sidebar.Pusher>
         </Sidebar.Pushable>
       </div>
     )
   }
 }
-
-export default SidebarPushMenu
