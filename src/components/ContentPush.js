@@ -19,7 +19,7 @@ export default class ContentPush extends Component {
           <Segment inverted vertical className="masthead">
 
             <Container>
-              <PointingMenu className="pointing_menu"/>
+              <PointingMenu className="pointing_menu" sideBarMenuPush={this.props.sideBarMenuPush}/>
             </Container>
 
             <Container text>

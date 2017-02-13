@@ -14,7 +14,7 @@ export default class PointingMenu extends Component {
         <Menu inverted pointing secondary size='large'>
           <Container>
             <div className='toc_item'>
-              <Menu.Item name='home'>
+              <Menu.Item name='home' onClick={this.props.sideBarMenuPush}>
                 <Icon disabled name='sidebar' link/>
               </Menu.Item>
             </div>

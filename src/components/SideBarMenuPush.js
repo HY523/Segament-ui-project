@@ -5,6 +5,7 @@ import ContentPush from './ContentPush'
 
 export default class SidebarPushMenu extends Component {
   state = { visible: false }
+  sideBarVisibility = () => this.setState({ visible: !this.state.visible })
   handleItemClick = (e, { name }) => this.setState({ activeItem: name })
   render() {
     const { activeItem, visible } = this.state
@@ -22,7 +23,7 @@ export default class SidebarPushMenu extends Component {
             <Menu.Item name='signup' active={activeItem === 'signup'} onClick={this.handleItemClick}/>
           </Sidebar>
           <Sidebar.Pusher>
-            <ContentPush/>
+            <ContentPush sideBarMenuPush={this.sideBarVisibility.bind(this)}/>
           </Sidebar.Pusher>
         </Sidebar.Pushable>
       </div>
