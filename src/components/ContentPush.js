@@ -3,7 +3,7 @@ import '../App.css';
 import 'semantic-ui-css/semantic.min.css';
 //import computeLayout from 'css-layout/dist/css-layout.min';
 
-import {Container, Header, Menu, Button, Image, Icon, Segment, Grid, List, Divider} from 'semantic-ui-react'
+import {Container, Header, Menu, Button, Image, Icon, Segment, Divider, List} from 'semantic-ui-react'
 import image1 from '../assets/images/wireframe/white-image.png'
 import image2 from '../assets/images/avatar/nan.jpg'
 
@@ -89,21 +89,21 @@ export default class ContentPush extends Component {
               <div className="ui stackable inverted divided equal height stackable grid">
                 <div className="three wide column">
                   <Header as="h4" inverted>About</Header>
-                  <div className="ui inverted link list">
-                    <a href="#" className="item">Sitemap</a>
-                    <a href="#" className="item">Contact Us</a>
-                    <a href="#" className="item">Religious Ceremonies</a>
-                    <a href="#" className="item">Gazebo Plans</a>
-                  </div>
+                  <List inverted link className="link_list">
+                    <List.Item as='a'>Sitemap</List.Item>
+                    <List.Item as='a'>Contact Us</List.Item>
+                    <List.Item as='a'>Religious Ceremonies</List.Item>
+                    <List.Item as='a'>Cazebo Plans</List.Item>
+                  </List>
                 </div>
                 <div className="three wide column">
                   <Header as="h4" inverted>Services</Header>
-                  <div className="ui inverted link list">
-                    <a href="#" className="item">Banana Pre-Order</a>
-                    <a href="#" className="item">DNA FAQ</a>
-                    <a href="#" className="item">How To Access</a>
-                    <a href="#" className="item">Favorite X-Men</a>
-                  </div>
+                  <List inverted link className="link_list">
+                    <List.Item as='a'>Banana Pre-Order</List.Item>
+                    <List.Item as='a'>DNA FAQ</List.Item>
+                    <List.Item as='a'>How to Access</List.Item>
+                    <List.Item as='a'>Favorite</List.Item>
+                  </List>
                 </div>
                 <div className="seven wide column">
                   <Header as="h4" inverted>Footer Header</Header>
