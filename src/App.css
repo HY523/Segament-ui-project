@@ -188,3 +188,20 @@
       display: block;
     }
   }
+  @media (max-width: 767px){
+    .footer_list {
+      flex-direction: column;
+      margin-left: -5.5em;
+    }
+    .footer_about_row {
+      width: 100% !important;
+    }
+    .footer_service_row {
+      width: 100% !important;
+      box-shadow: none;
+    }
+    .footer_header_row {
+      width: 100% !important;
+      box-shadow: none;
+    }
+  }
