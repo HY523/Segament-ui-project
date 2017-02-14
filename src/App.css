@@ -57,7 +57,6 @@
   padding: 5em 0em;
 }
 
-
  /*Css impleted with yoga */
 
 .stripe .stackable {
@@ -109,6 +108,33 @@
 
 .toc_item {
   display: none;
+}
+
+/*TopHiddenPushMenu*/
+
+.topHiddenMenu{
+  /*display: none;*/
+}
+
+/*Footer*/
+
+.footer_list {
+  display: flex;
+  flex-direction: row;
+}
+.footer_about_row {
+  width: 18.75% !important;
+  padding: 10px;
+}
+.footer_service_row {
+  width: 18.75% !important;
+  box-shadow: -1px 0px 0px 0px rgba(255, 255, 255, 0.1);
+  padding: 10px;
+}
+.footer_header_row {
+  width: 43.75% !important;
+  box-shadow: -1px 0px 0px 0px rgba(255, 255, 255, 0.1);
+  padding: 10px;
 }
 
   @media (min-width: 767px){

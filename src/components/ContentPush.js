@@ -38,7 +38,7 @@ export default class ContentPush extends Component {
                   <Header as="h3">We Help Companies and Companions</Header>
                   <p>We can give your company superpowers to do things that they never thought possible. Let us delight your customers and empower your needs...through pure data analytics.</p>
                   <Header as="h3">We Make Bananas That Can Dance</Header>
-                  <p>Yes that's right, you thought it was the stuff of dreams, but even bananas can be bioengineered.</p>
+                  <p>Yes that is right, you thought it was the stuff of dreams, but even bananas can be bioengineered.</p>
                 </div>
                 <div className="company_imageView">
                   <Image src={image1} size="large" bordered className="company_image"/>
@@ -80,32 +80,35 @@ export default class ContentPush extends Component {
               </Divider>
               <Header as="h3">Did We Tell You About Our Bananas?</Header>
               <p>Yes I know you probably disregarded the earlier boasts as non-sequitur filler content, but its really true. It took years of gene splicing and combinatory DNA research, but our bananas can really dance.</p>
-              <Button size="large">I'm Still Quite Interested</Button>
+              <Button size="large">I am Still Quite Interested</Button>
             </Container>
           </Segment>
 
-          <Segment inverted vertical>
+
+          <Segment inverted vertical style={{padding:'5em'}}>
             <Container>
-              <div className="ui stackable inverted divided equal height stackable grid">
-                <div className="three wide column">
+              <div className="footer_list">
+                <div className="footer_about_row">
                   <Header as="h4" inverted>About</Header>
-                  <List inverted link className="link_list">
+                  <List inverted link>
                     <List.Item as='a'>Sitemap</List.Item>
                     <List.Item as='a'>Contact Us</List.Item>
                     <List.Item as='a'>Religious Ceremonies</List.Item>
                     <List.Item as='a'>Cazebo Plans</List.Item>
                   </List>
                 </div>
-                <div className="three wide column">
+
+                <div className="footer_service_row">
                   <Header as="h4" inverted>Services</Header>
-                  <List inverted link className="link_list">
+                  <List inverted link>
                     <List.Item as='a'>Banana Pre-Order</List.Item>
                     <List.Item as='a'>DNA FAQ</List.Item>
                     <List.Item as='a'>How to Access</List.Item>
                     <List.Item as='a'>Favorite</List.Item>
                   </List>
                 </div>
-                <div className="seven wide column">
+
+                <div className="footer_header_row">
                   <Header as="h4" inverted>Footer Header</Header>
                   <p>Extra space for a call to action inside the footer that could help re-engage users.</p>
                 </div>
