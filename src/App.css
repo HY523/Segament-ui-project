@@ -1,8 +1,10 @@
 .topHiddenMenu {
-  display: hidden;
+  position: fixed;
+  z-index: 1000;
+  width: 100% !important;
 }
 
-.masthead.segment {
+.masthead {
   min-height: 700px;
   padding: 1em 0em;
   text-align: center;

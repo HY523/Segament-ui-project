@@ -1,8 +1,9 @@
 import React, { Component } from 'react'
 import { Menu, Container, Button, Segment} from 'semantic-ui-react'
 import '../App.css'
+
 export default class TopHiddenMenu extends Component {
-  state = {}
+  state = { activeItem: 'home' }
 
   handleItemClick = (e, { name }) => this.setState({ activeItem: name })
 
