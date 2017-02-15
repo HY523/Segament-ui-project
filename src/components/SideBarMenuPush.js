@@ -14,7 +14,7 @@ export default class SidebarPushMenu extends Component {
 
       <div>
         <Sidebar.Pushable as={Segment}>
-          <Sidebar as={Menu} animation='uncover' width='thin' visible={visible} vertical inverted>
+          <Sidebar as={Menu} animation='uncover' visible={visible} vertical inverted>
             <Menu.Item name='home' active={activeItem === 'home'} onClick={this.handleItemClick}/>
             <Menu.Item name='work' active={activeItem === 'work'} onClick={this.handleItemClick}/>
             <Menu.Item name='company' active={activeItem === 'company'} onClick={this.handleItemClick}/>

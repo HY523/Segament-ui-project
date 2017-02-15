@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Menu, Container, Button, Segment} from 'semantic-ui-react'
-
+import '../App.css'
 export default class TopHiddenMenu extends Component {
   state = {}
 
@@ -10,7 +10,7 @@ export default class TopHiddenMenu extends Component {
     const { activeItem } = this.state
 
     return (
-      <Menu size='large' className="topHiddenMenu">
+      <Menu size='large'>
         <Container>
           <Menu.Item name='home' active={activeItem === 'home'} onClick={this.handleItemClick}/>
           <Menu.Item name='work' active={activeItem === 'work'} onClick={this.handleItemClick}/>
