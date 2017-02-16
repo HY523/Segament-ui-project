@@ -3,13 +3,14 @@ import '../App.css';
 import 'semantic-ui-css/semantic.min.css';
 //import computeLayout from 'css-layout/dist/css-layout.min';
 
-import {Container, Header, Menu, Button, Image, Icon, Segment, Divider, List} from 'semantic-ui-react'
+import {Container, Header, Button, Image, Segment, Divider, List} from 'semantic-ui-react'
 import image1 from '../assets/images/wireframe/white-image.png'
 import image2 from '../assets/images/avatar/nan.jpg'
 
 import PointingMenu from './PointingMenu'
 
 export default class ContentPush extends Component {
+
   render() {
     return (
 
@@ -52,21 +53,16 @@ export default class ContentPush extends Component {
             </Container>
           </Segment>
 
-
           <Segment className="ui vertical stripe quote">
-            <div className="ui equal width stackable internally celled grid">
-              <div className="center aligned row">
-                <div className="column">
-                  <Header as="h3">"What a Company"</Header>
-                  <p>That is what they all say about us</p>
-                </div>
-                <div className="column">
-                  <Header as="h3">"I shouldn't have gone with their competitor."</Header>
-                  <p>
-                    <Image src={image2} shape="circular" size="mini" verticalAlign="middle"/> <span>Nan</span> Chief Fun Officer Acme Toys
-                  </p>
-                </div>
-              </div>
+            <div className="column">
+              <Header as="h3">"What a Company"</Header>
+              <p>That is what they all say about us</p>
+            </div>
+            <div className="column">
+              <Header as="h3">"I shouldn't have gone with their competitor."</Header>
+              <p>
+                <Image src={image2} shape="circular" size="mini" verticalAlign="middle"/> <span>Nan</span> Chief Fun Officer Acme Toys
+              </p>
             </div>
           </Segment>
 
@@ -83,7 +79,6 @@ export default class ContentPush extends Component {
               <Button size="large">I am Still Quite Interested</Button>
             </Container>
           </Segment>
-
 
           <Segment inverted vertical style={{padding:'5em'}}>
             <Container>

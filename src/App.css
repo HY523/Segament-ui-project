@@ -138,7 +138,16 @@
   box-shadow: -1px 0px 0px 0px rgba(255, 255, 255, 0.1);
   padding: 10px;
 }
-
+.ui.quote {
+  display: flex;
+  flex-direction: row;
+}
+.column {
+  width: 50% !important;
+  box-shadow: -1px 0px 0px 0px #D4D4D5;
+  padding: 5em 0 5em 0;
+  text-align: center;
+}
   @media (min-width: 767px){
 
     .stripe .stackable .row .help_company {
@@ -205,5 +214,13 @@
     .footer_header_row {
       width: 100% !important;
       box-shadow: none;
+    }
+
+    .ui.quote {
+      flex-direction: column;
+    }
+    .column {
+      width: 100% !important;
+      box-shadow: 0px 1px 0px 0px #D4D4D5;
     }
   }
