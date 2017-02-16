@@ -206,14 +206,20 @@
     }
     .footer_about_row {
       width: 100% !important;
+      padding-top: 2em;
+      padding-bottom: 2em;
     }
     .footer_service_row {
       width: 100% !important;
       box-shadow: none;
+      padding-top: 2em;
+      padding-bottom: 2em;
     }
     .footer_header_row {
       width: 100% !important;
       box-shadow: none;
+      padding-top: 2em;
+      padding-bottom: 2em;
     }
 
     .ui.quote {
