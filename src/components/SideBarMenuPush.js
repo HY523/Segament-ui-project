@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import '../App.css'
-import { Sidebar, Segment, Button, Menu, Image, Icon, Header } from 'semantic-ui-react'
+import { Sidebar, Segment, Menu} from 'semantic-ui-react'
 import ContentPush from './ContentPush'
 
 export default class SidebarPushMenu extends Component {
@@ -9,9 +9,7 @@ export default class SidebarPushMenu extends Component {
   handleItemClick = (e, { name }) => this.setState({ activeItem: name })
   render() {
     const { activeItem, visible } = this.state
-      //console.log('KKKK', toggleSideBarVisibility)
     return (
-
       <div>
         <Sidebar.Pushable as={Segment}>
           <Sidebar as={Menu} animation='uncover' visible={visible} vertical inverted>

@@ -4,9 +4,7 @@ import 'semantic-ui-css/semantic.min.css';
 import computeLayout from 'css-layout/dist/css-layout.min';
 import $ from 'jquery';
 
-//import {Container, Header, Button, Image, Segment} from 'semantic-ui-react'
 import SideBarMenuPush from './components/SideBarMenuPush'
-import ContentPush from './components/ContentPush'
 import TopHiddenMenu from './components/TopHiddenMenu'
 
 class App extends Component {
@@ -16,7 +14,7 @@ class App extends Component {
 
     $(window).scroll((event) => {
         var $div = $(".masthead");
-        var divBottom = $div.offset().top + parseInt($div.height());
+        var divBottom = $div.offset().top + parseInt($div.height())
 
         var scroll = $(window).scrollTop();
         if (scroll > divBottom){
