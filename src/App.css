@@ -1,19 +1,232 @@
-.App {
-  text-align: left;
+.topHiddenMenu {
+  position: fixed;
+  z-index: 1000;
+  width: 100% !important;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+.masthead {
+  min-height: 700px;
+  padding: 1em 0em;
+  text-align: center;
+}
+.masthead .logo.item img {
+  margin-right: 1em;
+}
+.masthead .ui.menu .ui.button {
+  margin-left: 0.5em;
+}
+.masthead h1.ui.header {
+  margin-top: 3em;
+  margin-bottom: 0em;
+  font-size: 4em;
+  font-weight: normal;
+}
+.masthead h2 {
+  font-size: 1.7em;
+  font-weight: normal;
 }
 
-.App-intro {
-  font-size: large;
+.ui.vertical.stripe {
+  padding: 8em 0em;
+}
+.ui.vertical.stripe h3 {
+  font-size: 2em;
+}
+.ui.vertical.stripe .button + h3,
+.ui.vertical.stripe p + h3 {
+  margin-top: 3em;
+}
+.ui.vertical.stripe .floated.image {
+  clear: both;
+}
+.ui.vertical.stripe p {
+  font-size: 1.33em;
+}
+.ui.vertical.stripe .horizontal_divider {
+  margin: 3em 0em;
+  color: #4183C4;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.quote.stripe.segment {
+  padding: 0em;
 }
+.quote.stripe.segment .grid .column {
+  padding-top: 5em;
+  padding-bottom: 5em;
+}
+
+.footer.segment {
+  padding: 5em 0em;
+}
+
+ /*Css impleted with yoga */
+
+.stripe .stackable {
+  display: flex;
+  flex-direction: row;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  padding: 1em 0em 1em 0;
+  flex-wrap: wrap;
+}
+
+.stripe .stackable .row .help_company {
+  width: 50% !important;
+  padding: 0em 1em 0em 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.stripe .stackable .row .company_imageView {
+  padding: 0em 1em 0em 1em;
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+}
+
+.stripe .stackable .row .company_image {
+  /*float: right;*/
+}
+
+.stripe .stackable .row .checkButton {
+  text-align: center;
+  width: 100% !important;
+}
+
+/*Pointing Menu*/
+
+.pointing_sign_menu {
+  margin-left: auto !important;
+  display: flex;
+}
+
+.pointing_menu {
+  display: flex;
+}
+
+.toc_item {
+  display: none;
+}
+
+/*TopHiddenPushMenu*/
+
+.topHiddenMenu{
+  /*display: none;*/
+}
+
+/*Footer*/
+
+.footer_list {
+  display: flex;
+  flex-direction: row;
+}
+.footer_about_row {
+  width: 18.75% !important;
+  padding: 10px;
+}
+.footer_service_row {
+  width: 18.75% !important;
+  box-shadow: -1px 0px 0px 0px rgba(255, 255, 255, 0.1);
+  padding: 10px;
+}
+.footer_header_row {
+  width: 43.75% !important;
+  box-shadow: -1px 0px 0px 0px rgba(255, 255, 255, 0.1);
+  padding: 10px;
+}
+.ui.quote {
+  display: flex;
+  flex-direction: row;
+}
+.column {
+  width: 50% !important;
+  box-shadow: -1px 0px 0px 0px #D4D4D5;
+  padding: 5em 0 5em 0;
+  text-align: center;
+}
+  @media (min-width: 767px){
+
+    .stripe .stackable .row .help_company {
+      width: 50% !important;
+    }
+    .stripe .stackable .row .company_imageView {
+      width: 37.5% !important;
+      margin-left: auto;
+    }
+    .stripe .stackable .row .company_image {
+      float: right;
+    }
+  }
+  @media (min-width: 500px) and (max-width: 767px){
+    .stripe .stackable .row .company_imageView {
+      width: 100% !important;
+      margin-left: auto;
+    }
+    .stripe .stackable .row .company_image {
+      float: right;
+    }
+    .stripe .stackable .row .help_company {
+      width: 100% !important;
+    }
+  }
+  @media (min-width: 320px) and (max-width: 500px){
+    .stripe .stackable .row .help_company {
+      width: 100% !important;
+    }
+  }
+
+  @media (max-width: 700px){
+    .pointing_menu {
+      display: none;
+    }
+    .masthead.segment {
+      min-height: 350px;
+    }
+    .masthead h1.ui.header {
+      margin-top: 1.5em;
+      font-size: 2em;
+      font-weight: normal;
+    }
+    .masthead h2 {
+      font-size: 1.7em;
+      font-weight: normal;
+    }
+    .toc_item {
+      display: block;
+    }
+  }
+  @media (max-width: 767px){
+    .footer_list {
+      flex-direction: column;
+      margin-left: -5.5em;
+    }
+    .footer_about_row {
+      width: 100% !important;
+      padding-top: 2em;
+      padding-bottom: 2em;
+    }
+    .footer_service_row {
+      width: 100% !important;
+      box-shadow: none;
+      padding-top: 2em;
+      padding-bottom: 2em;
+    }
+    .footer_header_row {
+      width: 100% !important;
+      box-shadow: none;
+      padding-top: 2em;
+      padding-bottom: 2em;
+    }
+
+    .ui.quote {
+      flex-direction: column;
+    }
+    .column {
+      width: 100% !important;
+      box-shadow: 0px 1px 0px 0px #D4D4D5;
+    }
+  }
